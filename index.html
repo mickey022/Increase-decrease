@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <
+    <style>
+        .inner{
+            border: 1px solid rgb(25, 89, 207);
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            background-image: url(./istockphoto-1154618066-170667a.webp);
+        }
+        .inn{
+            margin-top: 30px;
+            margin-left: 270px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="inner">
+            <h1>Increment and Decrement Counter</h1>
+           <div class="inn"> 
+        
+            <button id="add">+</button>
+            <h1 id="num">0</h1>
+            <button id="minus">-</button></div>
+
+        </div>
+    </section>
+</body>
+<script>
+    let numb = document.getElementById("num")
+    let num = 0
+    document.getElementById("add").addEventListener("click", function () {
+         numb.innerHTML = num++ 
+    });
+    document.getElementById("minus").addEventListener("click", function() {
+        if (num > 0) {
+        num--;
+        numb.innerHTML = num;
+    }
+});
+
+   
+</script>
+</html>
